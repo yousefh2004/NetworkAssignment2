@@ -1,6 +1,6 @@
 <?php
 require_once 'header.php';
-
+snmp_set_valueretrieval(SNMP_VALUE_PLAIN);
 $ip = "127.0.0.1";
 echo '<link rel="stylesheet" href="../css/p3.css">';
 ?>
