@@ -11,7 +11,7 @@ $sysContact  = snmp2_get($ip, "public", ".1.3.6.1.2.1.1.4.0");
 $sysName     = snmp2_get($ip, "public", ".1.3.6.1.2.1.1.5.0");
 $sysLocation = snmp2_get($ip, "public", ".1.3.6.1.2.1.1.6.0");
 ?>
-
+<?php require_once 'header.php'; ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,3 +43,4 @@ $sysLocation = snmp2_get($ip, "public", ".1.3.6.1.2.1.1.6.0");
 
 </body>
 </html>
+<?php require_once 'footer.php'; ?>
