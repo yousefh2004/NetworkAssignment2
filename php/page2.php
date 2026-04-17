@@ -2,8 +2,11 @@
 require_once 'header.php';
 snmp_set_valueretrieval(SNMP_VALUE_PLAIN);
 $ip = "127.0.0.1";
+$page = 2;
+
 echo '<link rel="stylesheet" href="../css/p2.css">';
 echo '<div class="page">';
+
 print("<div class='section'><div class='section-title'>UDP Statistics Fields</div>");
 echo "<table>";
 echo "<tr><th>#</th><th>Object Name</th><th>OID</th><th>Value</th><th>Description</th></tr>";
@@ -16,16 +19,20 @@ echo "</table></div>";
 print("<div class='section'><div class='section-title'>UDP Table</div>");
 $a = snmp2_walk($ip, "public", '.1.3.6.1.2.1.7.5.1.1');
 $p = snmp2_walk($ip, "public", '.1.3.6.1.2.1.7.5.1.2');
+
 echo "<table>";
 echo "<tr><th>#</th><th>Local Address</th><th>Local Port</th></tr>";
-    for ($i = 0; $i < count($a); $i++) {
-        echo "<tr>";
-        echo "<td>".($i + 1)."</td>";
-        echo "<td>".$a[$i]."</td>";
-        echo "<td>".($p[$i] ?? 'N/A')."</td>";
-        echo "</tr>";
-    }
-echo "</table></div>";
 
+for ($i = 0; $i < count($a); $i++) {
+    echo "<tr>";
+    echo "<td>".($i + 1)."</td>";
+    echo "<td>".$a[$i]."</td>";
+    echo "<td>".($p[$i] ?? 'N/A')."</td>";
+    echo "</tr>";
+}
+
+echo "</table></div>";
+echo "</div>";
+
+require_once 'footer.php';
 ?>
-<?php $page = 2; require_once 'footer.php'; ?>
