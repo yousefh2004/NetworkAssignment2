@@ -1,7 +1,9 @@
+
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial;
     background: #f3f0f7;
+    height:100vh;
 }
 
 .container {

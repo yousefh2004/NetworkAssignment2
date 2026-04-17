@@ -1,0 +1,31 @@
+.m {
+    max-width: 900px;
+    margin: auto;
+}
+
+header {
+    background: #faf7fc;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    margin: 0;
+    color: #6b21a8;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #444;
+}
+
+nav a:hover {
+    color: #6b21a8;
+}
