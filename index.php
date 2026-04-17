@@ -28,14 +28,14 @@
             </div>
         </a>
 
-        <a href="page2.php">
+        <a href="./php/page2.php">
             <div>
                 <h2>02</h2>
                 <p>UDP Group</p>
             </div>
         </a>
 
-        <a href="page3.php">
+        <a href="./php/page3.php">
             <div>
                 <h2>03</h2>
                 <p>SNMP Group</p>
