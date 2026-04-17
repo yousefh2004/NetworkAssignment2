@@ -43,4 +43,4 @@ $sysLocation = snmp2_get($ip, "public", ".1.3.6.1.2.1.1.6.0");
 
 </body>
 </html>
-<?php require_once 'footer.php'; ?>
+<?php $page = 1; require_once 'footer.php'; ?>

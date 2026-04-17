@@ -26,5 +26,6 @@ echo "<tr><th>#</th><th>Local Address</th><th>Local Port</th></tr>";
         echo "</tr>";
     }
 echo "</table></div>";
-require_once 'footer.php';
+
 ?>
+<?php $page = 2; require_once 'footer.php'; ?>
