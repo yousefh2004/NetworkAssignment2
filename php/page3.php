@@ -65,8 +65,6 @@ foreach ($walkValues as $val) {
 }
 echo "</table></div>";
 
-print("<div class='foot'>-------- end -----</div>");
-echo "</div>";
 
 require_once 'footer.php';
 ?>
