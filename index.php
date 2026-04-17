@@ -3,10 +3,9 @@
 <div class="wrapper">
     <div class="page-title">
         <h1>SNMP Network Manager</h1>
-        <p>Computer Networks 2 - Assignment 2 &nbsp;|&nbsp; An-Najah National University &nbsp;|&nbsp;</p>
+        <p>Computer Networks 2 - Assignment 2 - An-Najah National University - Spring 2026</p>
     </div>
 
-    <!-- Team Members Row -->
     <div class="stat-row page-title">
         <div class="stat-box" style="text-align:center;">
             <h1>Yousef Yaser Hajeer</h1>
@@ -19,11 +18,11 @@
     </div>
 
     <div class="stat-row">
-        <a href="page1.php" style="text-decoration:none">
+        <a href="./php/page1.php" style="text-decoration:none">
             <div class="stat-box">
                 <div class="num">01</div>
                 <div class="lbl">System Group</div>
-                <div class="desc">sysContact, sysName, sysLocation<br>Read &amp; Write</div>
+                <div class="desc">sysContact, sysName, sysLocation<br>Read || Write</div>
             </div>
         </a>
         <a href="page2.php" style="text-decoration:none">
@@ -47,11 +46,11 @@
         <div class="card-body">
             <table>
                 <tbody>
-                    <tr><td style="width:180px;font-weight:bold">Agent IP</td><td class="val">127.0.0.1</td></tr>
+                    <tr><td style="width:180px;font-weight:bold">Agent IP</td><td class="val">
+                   <?php preg_match('/IPv4 Address[^\:]*:\s*([\d\.]+)/', shell_exec('ipconfig'), $m); echo $m[1]; ?>
+    </td></tr>
                     <tr><td style="font-weight:bold">Port</td><td class="val">UDP 161</td></tr>
-                    <tr><td style="font-weight:bold">Read Community</td><td class="val">public</td></tr>
-                    <tr><td style="font-weight:bold">Write Community</td><td class="val">private</td></tr>
-                    <tr><td style="font-weight:bold">Protocol</td><td class="val">SNMPv2c</td></tr>
+                    <tr><td style="font-weight:bold">Protocol</td><td class="val">SNMPv2</td></tr>
                 </tbody>
             </table>
         </div>

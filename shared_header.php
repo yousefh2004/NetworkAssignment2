@@ -20,7 +20,7 @@ function page_header(string $title, string $activePage = ''): void { ?>
             font-size: 15px;
         }
 
-        /* NAV */
+      
         .navbar {
             background: #1a3a6a;
             padding: 0 24px;
@@ -105,7 +105,7 @@ function page_header(string $title, string $activePage = ''): void { ?>
             vertical-align: top;
         }
 
-        /* VALUE highlight */
+        
         .val {
             font-weight: bold;
             color: #1a3a6a;
@@ -190,7 +190,6 @@ function page_header(string $title, string $activePage = ''): void { ?>
         }
         .btn:hover { background: #2a5298; }
 
-        /* ALERT */
         .alert {
             padding: 11px 16px;
             border-radius: 4px;
@@ -200,8 +199,6 @@ function page_header(string $title, string $activePage = ''): void { ?>
         .alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
         .alert.error   { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
         .alert.info    { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
-
-        /* BOTTOM NAV */
         .bottom-nav {
             display: flex;
             justify-content: space-between;
@@ -228,7 +225,7 @@ function page_header(string $title, string $activePage = ''): void { ?>
             font-weight: bold;
         }
 
-        /* FOOTER */
+   
         .footer {
             text-align: center;
             color: #888;
@@ -237,8 +234,6 @@ function page_header(string $title, string $activePage = ''): void { ?>
             border-top: 1px solid #dde3ed;
             margin-top: 20px;
         }
-
-        /* TWO COLUMN GRID */
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -261,31 +256,13 @@ function page_header(string $title, string $activePage = ''): void { ?>
 
 function page_footer(string $prev='', string $next='', string $prevLbl='← Previous', string $nextLbl='Next →'): void { ?>
 
-<div class="bottom-nav">
-    <?php if ($prev): ?>
-        <a href="<?= htmlspecialchars($prev) ?>"><?= htmlspecialchars($prevLbl) ?></a>
-    <?php else: ?>
-        <span class="disabled">← Previous</span>
-    <?php endif; ?>
-
-    <a href="index.php">⌂ Home</a>
-
-    <?php if ($next): ?>
-        <a href="<?= htmlspecialchars($next) ?>"><?= htmlspecialchars($nextLbl) ?></a>
-    <?php else: ?>
-        <span class="disabled">Next →</span>
-    <?php endif; ?>
-</div>
-
-</div><!-- /wrapper -->
-
 <div class="footer">
     An-Najah National University &nbsp;·&nbsp; Computer Networks 2 &nbsp;·&nbsp; Spring 2026
 </div>
 
 </body>
 </html>
-<?php } // end page_footer
+<?php } 
 
 function snmp_val(string $raw): string {
     if (preg_match('/^[A-Za-z0-9 _\-]+:\s*"?(.+?)"?\s*$/', trim($raw), $m)) {
