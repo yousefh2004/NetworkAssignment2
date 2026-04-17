@@ -82,4 +82,4 @@ foreach ($walk as $i => $value) {
 </table>
 </div>
 </div>
-<?php require_once 'footer.php'; ?>
+<?php $page =3; require_once 'footer.php'; ?>

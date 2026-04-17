@@ -4,11 +4,11 @@ body {
     background: #f3f0f7;
     color: #4c1d95;
     text-align: center;
-    padding-top: 20px;
+     width: 100%;
 }
 
 .page {
-    width: 75%;
+    width: 90%;
     margin: 20px auto 40px auto;
     background: #ffffff;
     padding: 25px;
@@ -19,6 +19,7 @@ body {
 
 .section {
     margin-bottom: 25px;
+     width: 100%;
 }
 
 .section-title {
@@ -42,6 +43,8 @@ td {
     padding: 12px;
     border-bottom: 1px solid #eee;
     text-align: left;
+    width: fit-content;
+
 }
 
 tr:first-child {
